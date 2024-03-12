@@ -120,8 +120,15 @@ module decoder
    logic   [9:0]       addr_disp_mem_1;
 
 //Branch matrc calculation modules
-
+// only using bmc000 and bmc 001 modules for all instances
    bmc000   bmc000_inst(d_in,bmc000_path_0_bmc,bmc000_path_1_bmc);
+   bmc001   bmc001_inst(d_in,bmc001_path_0_bmc,bmc001_path_1_bmc);
+   bmc001   bmc010_inst(d_in,bmc010_path_0_bmc,bmc010_path_1_bmc);
+   bmc000   bmc011_inst(d_in,bmc011_path_0_bmc,bmc011_path_1_bmc);
+   bmc000   bmc100_inst(d_in,bmc100_path_0_bmc,bmc100_path_1_bmc);
+   bmc001   bmc101_inst(d_in,bmc101_path_0_bmc,bmc101_path_1_bmc);
+   bmc001   bmc110_inst(d_in,bmc110_path_0_bmc,bmc110_path_1_bmc);
+   bmc000   bmc111_inst(d_in,bmc111_path_0_bmc,bmc111_path_1_bmc);
 /*  similarly for bmc001 through 111
 */
 
