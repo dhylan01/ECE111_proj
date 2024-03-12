@@ -9,25 +9,27 @@ module ACS		                        // add-compare-select
 
    output logic        selection,
    output logic        valid_o,
-   output      [7:0] path_cost);  
+   output logic     [7:0] path_cost);  
 
-   wire  [7:0] path_cost_0;			   // branch metric + path metric
-   wire  [7:0] path_cost_1;
-   logic [2:0] index; 
+   logic  [7:0] path_cost_0;			   // branch metric + path metric
+   logic  [7:0] path_cost_1;
+
+ 
 /* Fill in the guts per ACS instructions
 */
 always_comb begin
 
 // generate path costs
-if (index < 2) begin
-path_cost_0[index] <= path_0_bmc[index] + path_0_pmc[index]; 
-path_cost_1[index] <= path_1_bmc[index] + path_1_pmc[index]; 
-index <= index+1; 
-end else begin
+
+path_cost_0[0] <= path_0_bmc[0] + path_0_pmc[0]; 
+path_cost_1[0] <= path_1_bmc[0] + path_1_pmc[0]; 
+path_cost_0[1] <= path_0_bmc[1] + path_0_pmc[1]; 
+path_cost_1[1] <= path_1_bmc[1] + path_1_pmc[1]; 
+
 path_cost_0[7:2] <= path_0_pmc[7:2];
 path_cost_1[7:2] <= path_1_pmc[7:2];
-index <= 0;
-end
+
+
 
 //generate selection 
 if (!path_0_valid & !path_1_valid)
@@ -52,7 +54,7 @@ end
    end
 // choosing path cost
 
-if(valid_o == 0) begin
+if(!valid_o) begin
    path_cost <= 0;
 end else if(selection == 0) begin
    path_cost <= path_cost_0;
