@@ -81,16 +81,14 @@ module encoder                    // use this one
       endcase
    end								   
 
-   always @ (posedge clk,negedge rst)   begin
-//      $display("data in=%d state=%b%b%b data out=%b%b",d_in,reg_1,reg_2,reg_3,d_out_reg[1],d_out_reg[0]);
-      if(!rst)
-         cstate   <= 3'b000;
-      else if(!enable_i)
-         cstate   <= 3'b000;
-      else
-         cstate   <= nstate;
-      d_out    <=  (enable_i)? d_out_reg : 2'b00;
-	  valid_o  <= valid_oQ;
+   always @ (posedge clk, negedge rst)   
+     if(!rst)
+       cstate   <= 'b0;
+     else 
+       cstate   <= enable_i? nstate : 'b0;
+   always @ (posedge clk) begin
+     d_out      <= enable_i? d_out_reg : 'b0;
+     valid_o    <= valid_oQ;
    end
 
 endmodule
