@@ -1,3 +1,7 @@
+`include "mem_disp.sv"
+`include "tbu.sv"
+`include "mem.sv"
+
 module decoder
 (
    input             clk,
@@ -156,6 +160,15 @@ module decoder
 /* clear all 8 path costs
          path_cost[i]      <= 8'd0;
 */
+         path_cost[0]      <= 8'd0;
+         path_cost[1]      <= 8'd0;
+         path_cost[2]      <= 8'd0;
+         path_cost[3]      <= 8'd0;
+         path_cost[4]      <= 8'd0;
+         path_cost[5]      <= 8'd0;
+         path_cost[6]      <= 8'd0;
+         path_cost[7]      <= 8'd0;
+
       end
       else if(!enable)   begin
          validity          <= 8'b00000001;
@@ -163,6 +176,15 @@ module decoder
 /* clear all 8 path costs
          path_cost[i]      <= 8'd0;
 */
+         path_cost[0]      <= 8'd0;
+         path_cost[1]      <= 8'd0;
+         path_cost[2]      <= 8'd0;
+         path_cost[3]      <= 8'd0;
+         path_cost[4]      <= 8'd0;
+         path_cost[5]      <= 8'd0;
+         path_cost[6]      <= 8'd0;
+         path_cost[7]      <= 8'd0;
+
       end
       else if( path_cost[0][7] && path_cost[1][7] && path_cost[2][7] && path_cost[3][7] &&
              path_cost[4][7] && path_cost[5][7] && path_cost[6][7] && path_cost[7][7] )
@@ -174,12 +196,26 @@ module decoder
          path_cost[0]      <= 8'b01111111 & ACS000_path_cost;
 /*  likewise for path_cost[1:7] and ACS001:111_path_cost
 */
+         path_cost[1]      <= 8'b01111111 & ACS001_path_cost;
+         path_cost[2]      <= 8'b01111111 & ACS010_path_cost;
+         path_cost[3]      <= 8'b01111111 & ACS011_path_cost;
+         path_cost[4]      <= 8'b01111111 & ACS100_path_cost;
+         path_cost[5]      <= 8'b01111111 & ACS101_path_cost;
+         path_cost[6]      <= 8'b01111111 & ACS110_path_cost;
+         path_cost[7]      <= 8'b01111111 & ACS111_path_cost;
       end
       else   begin
          validity          <= validity_nets;
          selection         <= selection_nets;
 
          path_cost[0]      <= ACS000_path_cost;
+         path_cost[1]      <= ACS001_path_cost;
+         path_cost[2]      <= ACS010_path_cost;
+         path_cost[3]      <= ACS011_path_cost;
+         path_cost[4]      <= ACS100_path_cost;
+         path_cost[5]      <= ACS101_path_cost;
+         path_cost[6]      <= ACS110_path_cost;
+         path_cost[7]      <= ACS111_path_cost;
 /* likewise for 1:7
 */
       end
@@ -196,7 +232,7 @@ module decoder
 
    always @ (posedge clk, negedge rst) begin
       if(!rst)
-         rd_mem_counter <= // -1   how do you handle this in 10 bit binary?
+         rd_mem_counter <= 10'b1111111111;// -1   how do you handle this in 10 bit binary?
       else if(enable)
          rd_mem_counter <= rd_mem_counter - 10'd1;
    end
@@ -466,7 +502,11 @@ module decoder
             addr_disp_mem_0   <= rd_mem_counter_disp; 
             addr_disp_mem_1   <= wr_mem_counter_disp;
          end
-         1'b1:	 swap rd and wr 
+         1'b1:	// swap rd and wr 
+			begin
+            addr_disp_mem_1   <= rd_mem_counter_disp; 
+            addr_disp_mem_0   <= wr_mem_counter_disp;				
+			end
       endcase
 
    always @ (posedge clk) begin
@@ -475,8 +515,8 @@ module decoder
    end
 
    always @ (posedge clk) begin
-    d_out = d_o_disp_mem_i 
-    i = mem_bank_buf_buf_buf_buf_buf 
-
+    /*d_out = d_o_disp_mem_i; 
+    i = mem_bank_buf_buf_buf_buf_buf;
+*/
    end
 endmodule
