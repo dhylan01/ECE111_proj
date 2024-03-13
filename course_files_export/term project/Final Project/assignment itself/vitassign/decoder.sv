@@ -515,8 +515,10 @@ module decoder
    end
 
    always @ (posedge clk) begin
-    /*d_out = d_o_disp_mem_i; 
-    i = mem_bank_buf_buf_buf_buf_buf;
+    if(mem_bank_buf_buf_buf_buf_buf)
+    d_out = d_o_disp_mem_1; 
+    else d_out = d_o_disp_mem_0; 
+    /*i = mem_bank_buf_buf_buf_buf_buf;
 */
    end
 endmodule

@@ -8,7 +8,7 @@ module encoder_tb;
                d_out2;
    wire        valid_o;
 
-   encoder DUT    (
+   encoder1 DUT    (
       .clk,
       .rst,
 	  .enable_i,

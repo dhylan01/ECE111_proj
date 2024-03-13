@@ -1,4 +1,4 @@
-module encoder                    // use this one
+module encoder1                    // use this one
 (  input             clk,
    input             rst,
    input             enable_i,
