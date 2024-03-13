@@ -1,3 +1,5 @@
+`include "encoder.sv"
+`include "decoder.sv"
 module viterbi_tx_rx(
    input    clk,
    input    rst,
@@ -31,7 +33,7 @@ module viterbi_tx_rx(
 
 // insert your convolutional encoder here
 // change port names and module name as necessary/desired
-   encoder encoder1	     (
+   encoder encoder	     (
       .clk,
       .rst,
       .enable_i(enable_encoder_i),
@@ -40,7 +42,7 @@ module viterbi_tx_rx(
       .d_out(encoder_o)   );
 
 // insert your term project code here 
-   decoder decoder1	     (
+   decoder decoder	     (
       .clk,
       .rst,
       .enable(enable_decoder_in),

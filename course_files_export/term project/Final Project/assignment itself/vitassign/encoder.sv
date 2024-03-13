@@ -17,7 +17,70 @@ module encoder                    // use this one
    always_comb begin
       valid_o  =   enable_i;
       case (cstate)
-// fill in the guts
+         3'b000: if(!d_in)  begin
+               nstate    =  3'b000;
+               d_out_reg =  2'b00;
+            end
+            else begin
+               nstate    =  3'b100;
+               d_out_reg =  2'b11;
+            end
+         3'b001: if(!d_in)  begin
+               nstate    =  3'b100;
+               d_out_reg =  2'b00;
+            end
+            else begin
+               nstate    =  3'b000;
+               d_out_reg =  2'b11;
+            end
+         3'b010: if(!d_in)  begin
+               nstate    =  3'b101;
+               d_out_reg =  2'b10;
+            end
+            else begin
+               nstate    =  3'b001;
+               d_out_reg =  2'b01;
+            end
+         3'b011:  if(!d_in) begin
+               nstate    =  3'b001;
+               d_out_reg =  2'b10;
+            end
+            else begin
+               nstate    =  3'b101;
+               d_out_reg =  2'b01;
+            end
+         3'b100:  if(!d_in)   begin
+               nstate    =  3'b010;
+               d_out_reg =  2'b10;
+            end
+            else              begin
+               nstate    =  3'b110;
+               d_out_reg =  2'b01;
+            end
+         3'b101:  if(!d_in)  begin
+               nstate    =  3'b110;
+               d_out_reg =  2'b10;
+            end
+            else       begin
+               nstate    =  3'b010;
+               d_out_reg =  2'b01;
+            end
+         3'b110:  if(!d_in)   begin
+               nstate    =  3'b111;
+               d_out_reg =  2'b00;
+            end
+            else     begin
+               nstate    =  3'b011;
+               d_out_reg =  2'b11;
+            end
+         3'b111:  if(!d_in)   begin
+               nstate    =  3'b011;
+               d_out_reg =  2'b00;
+            end
+            else      begin
+               nstate    =  3'b111;
+               d_out_reg =  2'b11;
+            end
       endcase
    end								   
 
