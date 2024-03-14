@@ -15,12 +15,15 @@ module ACS (
 
    // Calculate path costs
    always_comb begin
-      path_cost_0[0] = path_0_bmc[0] + path_0_pmc[0]; 
+      path_cost_0 = path_0_bmc + path_0_pmc; 
+      path_cost_1 = path_1_bmc + path_1_pmc; 
+    /*  path_cost_0[0] = path_0_bmc[0] + path_0_pmc[0]; 
       path_cost_1[0] = path_1_bmc[0] + path_1_pmc[0]; 
       path_cost_0[1] = path_0_bmc[1] + path_0_pmc[1]; 
       path_cost_1[1] = path_1_bmc[1] + path_1_pmc[1]; 
       path_cost_0[7:2] = path_0_pmc[7:2];
-      path_cost_1[7:2] = path_1_pmc[7:2];
+      path_cost_1[7:2] = path_1_pmc[7:2]; 
+      */
    end
 
    // Generate selection
