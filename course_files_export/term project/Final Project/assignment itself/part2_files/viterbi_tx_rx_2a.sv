@@ -24,8 +24,8 @@ module viterbi_tx_rx(
          enable_decoder_in <= valid_encoder_o; 
          encoder_o_reg  <= 2'b00;
          error_counter  <= error_counter + 4'd1;
-         if(error_counter==4'b1111)
-            encoder_o_reg  <= {~encoder_o[1],encoder_o[0]};	 // inject one bad bit out of every 32
+         if(error_counter==4'b0111)
+            encoder_o_reg  <= {~encoder_o[0],encoder_o[0]};	 // inject one bad bit out of every 16
          else
             encoder_o_reg  <= {encoder_o[1],encoder_o[0]};
       end   

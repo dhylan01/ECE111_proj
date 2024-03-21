@@ -1,4 +1,6 @@
-
+`include "mem_disp.sv"
+`include "tbu.sv"
+`include "mem.sv"
 
 module decoder
 (
