@@ -11,7 +11,7 @@ cModel Technology
 dD:/ECE 111/Lab8_modelsi
 vACS
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1711046673
+Z1 !s110 1711057346
 !i10b 1
 !s100 g^TV;gcMWYCj@OmeO0<zL2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ Z4 dD:/ECE111_proj/course_files_export/term project/Final Project/Proj_modelSim
 Z5 w1710720679
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/ACS.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/ACS.sv
-!i122 100
+!i122 479
 L0 1 56
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1711046673.000000
+Z7 !s108 1711057346.000000
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/ACS.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/ACS.sv|
 !i113 1
@@ -48,7 +48,7 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/ACS_tb.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/ACS_tb.sv
-!i122 101
+!i122 480
 L0 1 98
 R6
 r1
@@ -63,7 +63,7 @@ R9
 n@a@c@s_tb
 vbmc000
 R0
-R1
+Z10 !s110 1711057347
 !i10b 1
 !s100 h8fe1D6dnUSEdmcMJZ?4n0
 R2
@@ -74,13 +74,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc000.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc000.sv
-!i122 102
+!i122 481
 L0 1 24
 R6
 r1
 !s85 0
 31
-R7
+Z11 !s108 1711057347.000000
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc000.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc000.sv|
 !i113 1
@@ -88,7 +88,7 @@ R8
 R9
 vbmc001
 R0
-Z10 !s110 1711046674
+R10
 !i10b 1
 !s100 E7MOV;[j_j[Fi;Kz;f5nT0
 R2
@@ -99,13 +99,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc001.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc001.sv
-!i122 103
+!i122 482
 L0 1 18
 R6
 r1
 !s85 0
 31
-Z11 !s108 1711046674.000000
+R11
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc001.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc001.sv|
 !i113 1
@@ -124,7 +124,7 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc010.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc010.sv
-!i122 104
+!i122 483
 Z12 L0 1 7
 R6
 r1
@@ -149,7 +149,7 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc011.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc011.sv
-!i122 105
+!i122 484
 R12
 R6
 r1
@@ -163,7 +163,7 @@ R8
 R9
 vbmc100
 R0
-R10
+Z13 !s110 1711057348
 !i10b 1
 !s100 hZJOL8`^YG43b;@zKceXa2
 R2
@@ -174,7 +174,7 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc100.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc100.sv
-!i122 106
+!i122 485
 R12
 R6
 r1
@@ -188,7 +188,7 @@ R8
 R9
 vbmc101
 R0
-R10
+R13
 !i10b 1
 !s100 aQ`i37;HnQaI_UGCLgGCd3
 R2
@@ -199,13 +199,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc101.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc101.sv
-!i122 107
-Z13 L0 1 6
+!i122 486
+Z14 L0 1 6
 R6
 r1
 !s85 0
 31
-R11
+Z15 !s108 1711057348.000000
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc101.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc101.sv|
 !i113 1
@@ -213,7 +213,7 @@ R8
 R9
 vbmc110
 R0
-R10
+R13
 !i10b 1
 !s100 MD;WD[XI;Tij`dYU8b^7W3
 R2
@@ -224,13 +224,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc110.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc110.sv
-!i122 108
+!i122 487
 R12
 R6
 r1
 !s85 0
 31
-R11
+R15
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc110.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc110.sv|
 !i113 1
@@ -238,7 +238,7 @@ R8
 R9
 vbmc111
 R0
-R10
+R13
 !i10b 1
 !s100 :2^F_LnYS^24VzF19WS2<2
 R2
@@ -249,13 +249,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc111.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc111.sv
-!i122 109
-R13
+!i122 488
+R14
 R6
 r1
 !s85 0
 31
-R11
+R15
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc111.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc111.sv|
 !i113 1
@@ -263,7 +263,7 @@ R8
 R9
 vdecoder
 R0
-R10
+R13
 !i10b 1
 !s100 NmCG^W6@o47zMJ_=mlJoI1
 R2
@@ -274,13 +274,13 @@ R4
 w1711045201
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/decoder.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/decoder.sv
-!i122 110
+!i122 489
 L0 3 520
 R6
 r1
 !s85 0
 31
-R11
+R15
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/decoder.sv|
 !i113 1
@@ -288,7 +288,7 @@ R8
 R9
 vencoder
 R0
-Z14 !s110 1711046675
+R13
 !i10b 1
 !s100 i>JKVSl1HR>0l^Z<GLoUY2
 R2
@@ -299,13 +299,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/encoder.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/encoder.sv
-!i122 111
+!i122 490
 L0 2 96
 R6
 r1
 !s85 0
 31
-R11
+R15
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/encoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/encoder.sv|
 !i113 1
@@ -313,7 +313,7 @@ R8
 R9
 vencoder1
 R0
-Z15 !s110 1711044579
+Z16 !s110 1711044579
 !i10b 1
 !s100 Xk9L_LEBQCal4HR[3bXKY2
 R2
@@ -330,7 +330,7 @@ R6
 r1
 !s85 0
 31
-Z16 !s108 1711044579.000000
+Z17 !s108 1711044579.000000
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/encoder to use for Term Project/encoder1.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/encoder to use for Term Project/encoder1.sv|
 !i113 1
@@ -338,7 +338,7 @@ R8
 R9
 vencoder2
 R0
-R15
+R16
 !i10b 1
 !s100 VJVEJRgSZJfkQ@ooOFQRd1
 R2
@@ -355,7 +355,7 @@ R6
 r1
 !s85 0
 31
-R16
+R17
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/encoder to use for Term Project/encoder2.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/encoder to use for Term Project/encoder2.sv|
 !i113 1
@@ -363,7 +363,7 @@ R8
 R9
 vencoder_tb
 R0
-R14
+R13
 !i10b 1
 !s100 `]GiUaIaC`K^<g7n_M1951
 R2
@@ -374,13 +374,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/encoder_tb.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/encoder_tb.sv
-!i122 112
+!i122 491
 L0 1 65
 R6
 r1
 !s85 0
 31
-Z17 !s108 1711046675.000000
+R15
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/encoder_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/encoder_tb.sv|
 !i113 1
@@ -388,7 +388,7 @@ R8
 R9
 vmem
 R0
-R14
+R13
 !i10b 1
 !s100 ]]]<WI7Y>DT6]Q^nQQTTj0
 R2
@@ -399,13 +399,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem.sv
-!i122 113
+!i122 492
 Z18 L0 1 15
 R6
 r1
 !s85 0
 31
-R17
+R15
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem.sv|
 !i113 1
@@ -413,7 +413,7 @@ R8
 R9
 vmem_disp
 R0
-R14
+Z19 !s110 1711057349
 !i10b 1
 !s100 :^7]noCAOd[iE]N]>00Ma2
 R2
@@ -424,13 +424,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem_disp.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem_disp.sv
-!i122 114
+!i122 493
 R18
 R6
 r1
 !s85 0
 31
-R17
+Z20 !s108 1711057349.000000
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem_disp.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem_disp.sv|
 !i113 1
@@ -438,7 +438,7 @@ R8
 R9
 vtbu
 R0
-R14
+R19
 !i10b 1
 !s100 cRz]X0hILf=eeXHQnjRRD2
 R2
@@ -449,13 +449,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/tbu.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/tbu.sv
-!i122 115
+!i122 494
 L0 1 164
 R6
 r1
 !s85 0
 31
-R17
+R20
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/tbu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/tbu.sv|
 !i113 1
@@ -463,7 +463,7 @@ R8
 R9
 vtbu_tb
 R0
-R14
+R19
 !i10b 1
 !s100 _m^N4Gz6OJ;fbYk?e5l5=3
 R2
@@ -474,13 +474,13 @@ R4
 R5
 8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/tbu_tb.sv
 FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/tbu_tb.sv
-!i122 116
+!i122 495
 L0 1 63
 R6
 r1
 !s85 0
 31
-R17
+R20
 !s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/tbu_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/tbu_tb.sv|
 !i113 1
@@ -488,51 +488,51 @@ R8
 R9
 vviterbi_tx_rx
 R0
-R14
+R19
 !i10b 1
-!s100 [PbBScQP3;8U<2lloa57]1
+!s100 9a2j83aUcPic2;5bFIdi^0
 R2
-IXLRILz`fD15A_3F?2PSPU3
+I_jkzz6Q7YzS<9KZe?mV<91
 R3
 S1
 R4
-w1711046664
-8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a.sv
-FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a.sv
-!i122 118
-L0 2 50
+w1711057338
+8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a_1.sv
+FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a_1.sv
+!i122 497
+L0 6 77
 R6
 r1
 !s85 0
 31
-R17
-!s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a.sv|
+R20
+!s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a_1.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a_1.sv|
 !i113 1
 R8
 R9
 vviterbi_tx_rx_tb
 R0
-R14
+R19
 !i10b 1
-!s100 >Z4Zn;k>7zA@?@56m9GmI0
+!s100 ?ge_5_f>CQ@GUb0dF1YfQ1
 R2
-Ic84ckLLQQAZioYS7fA2Yn2
+IT]7L`EGCcILKDgT<R^1IU3
 R3
 S1
 R4
 R5
-8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx_tb.sv
-FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx_tb.sv
-!i122 117
-L0 2 373
+8D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/viterbi_tx_rx_tb.sv
+FD:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/viterbi_tx_rx_tb.sv
+!i122 496
+L0 2 219
 R6
 r1
 !s85 0
 31
-R17
-!s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx_tb.sv|
+R20
+!s107 D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/viterbi_tx_rx_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/viterbi_tx_rx_tb.sv|
 !i113 1
 R8
 R9

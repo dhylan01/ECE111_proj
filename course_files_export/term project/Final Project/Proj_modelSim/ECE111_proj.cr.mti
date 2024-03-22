@@ -26,7 +26,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	bmc111
 
-} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx_tb.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx_tb.sv}
+} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a_1.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a_1.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module viterbi_tx_rx
+
+Top level modules:
+	viterbi_tx_rx
+
+} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/viterbi_tx_rx_tb.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/viterbi_tx_rx_tb.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module viterbi_tx_rx_tb
 
