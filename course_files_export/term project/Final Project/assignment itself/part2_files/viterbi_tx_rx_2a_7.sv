@@ -23,6 +23,7 @@ module viterbi_tx_rx #(parameter N=3) (
    logic         enable_encoder_i_reg;
    wire          valid_encoder_o;
    logic   [1:0] err_inj;
+   logic [1:0] four_cnt; 
     logic inv_flag;
    always @ (posedge clk, negedge rst) 
       if(!rst) begin  
@@ -33,7 +34,7 @@ module viterbi_tx_rx #(parameter N=3) (
          enable_decoder_in    <= 'b0;
 		 enable_encoder_i_reg <= 'b0;
 		 word_ct              <= 'b0;
-         inv_flag <= 0;
+         four_cnt <= 0;
       end
       else begin 
          enable_encoder_i_reg <= enable_encoder_i;  
@@ -45,12 +46,12 @@ module viterbi_tx_rx #(parameter N=3) (
          encoder_i_reg     <= encoder_i;
          encoder_o_reg0    <= encoder_o;
 //	     error_counterQ    <= error_counter;
-         if(word_ct > 0 && (word_ct % 14 == 0 || inv_flag)) begin //
+         if(word_ct > 0 && (word_ct % 27 == 0 || four_cnt > 0)) begin //
 		   //  err_inj        <= error_counter[29:28];
            			
 
-            encoder_o_reg  <= {encoder_o[1], ~encoder_o[0]};	 // inject bad bits 
-            inv_flag <= ~inv_flag;
+            encoder_o_reg  <= {~encoder_o[1], encoder_o[0]};	 // inject bad bits 
+            four_cnt <= four_cnt + 1;
          end
          else begin       		   // clean version
             encoder_o_reg  <= encoder_o;

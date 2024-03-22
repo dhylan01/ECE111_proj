@@ -26,14 +26,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	bmc111
 
-} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a_1.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/part2_files/viterbi_tx_rx_2a_1.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module viterbi_tx_rx
-
-Top level modules:
-	viterbi_tx_rx
-
-} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/viterbi_tx_rx_tb.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/viterbi_tx_rx_tb.sv}
+} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx_tb.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx_tb.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module viterbi_tx_rx_tb
 
@@ -46,6 +39,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	ACS
+
+} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/viterbi_tx_rx.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module viterbi_tx_rx
+
+Top level modules:
+	viterbi_tx_rx
 
 } {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc100.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/bmc100.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -75,19 +75,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	bmc011
 
-} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/decoder.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/decoder.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module decoder
-
-Top level modules:
-	decoder
-
 } {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem_disp.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem_disp.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module mem_disp
 
 Top level modules:
 	mem_disp
+
+} {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/decoder.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/decoder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module decoder
+
+Top level modules:
+	decoder
 
 } {} {}} {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem.sv} {1 {vlog -work work -sv -stats=none {D:/ECE111_proj/course_files_export/term project/Final Project/assignment itself/vitassign/mem.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

@@ -23,7 +23,7 @@ module viterbi_tx_rx #(parameter N=3) (
    logic         enable_encoder_i_reg;
    wire          valid_encoder_o;
    logic   [1:0] err_inj;
-    logic inv_flag;
+
    always @ (posedge clk, negedge rst) 
       if(!rst) begin  
          error_counter        <= 'd0;
@@ -33,29 +33,24 @@ module viterbi_tx_rx #(parameter N=3) (
          enable_decoder_in    <= 'b0;
 		 enable_encoder_i_reg <= 'b0;
 		 word_ct              <= 'b0;
-         inv_flag <= 0;
       end
       else begin 
          enable_encoder_i_reg <= enable_encoder_i;  
          enable_decoder_in    <= valid_encoder_o; 
 //         encoder_o_reg        <= 'b0;
-         //if(word_ct[0]) error_counter        <= $random;
+         error_counter        <= $random;
          word_ct              <= word_ct + 1;			
 // bit error injection in encoder_o_reg        					           					           
          encoder_i_reg     <= encoder_i;
          encoder_o_reg0    <= encoder_o;
-//	     error_counterQ    <= error_counter;
-         if(word_ct > 0 && (word_ct % 14 == 0 || inv_flag)) begin //
+//	     error_counterQ    <= error_counter;s
+         if(error_counter[2:0] == '1) begin //
 		   //  err_inj        <= error_counter[29:28];
-           			
-
-            encoder_o_reg  <= {encoder_o[1], ~encoder_o[0]};	 // inject bad bits 
-            inv_flag <= ~inv_flag;
+            encoder_o_reg  <= {~encoder_o[1], encoder_o[0]};	 // inject bad bits 
          end
          else begin       		   // clean version
             encoder_o_reg  <= encoder_o;
             err_inj        <= 2'b0;
-
 		end
         if(word_ct<256) begin
           bad_bit_ct  <= bad_bit_ct + (encoder_o_reg0[1]^encoder_o_reg[1])

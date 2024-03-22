@@ -56,7 +56,7 @@ module viterbi_tx_rx #(parameter N=3) (
           bad_bit_ct  <= bad_bit_ct + (encoder_o_reg0[1]^encoder_o_reg[1])
 		                      + (encoder_o_reg0[0]^encoder_o_reg[0]);
 		  $display("input, output = %b %b %d %d",
-		         encoder_o,encoder_o_reg,bad_bit_ct,word_ct);
+		         encoder_o_reg0,encoder_o_reg,bad_bit_ct,word_ct);
         end
       end   
 

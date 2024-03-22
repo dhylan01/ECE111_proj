@@ -55,8 +55,8 @@ module viterbi_tx_rx #(parameter N=3) (
         if(word_ct<256) begin
           bad_bit_ct  <= bad_bit_ct + (encoder_o_reg0[1]^encoder_o_reg[1])
 		                      + (encoder_o_reg0[0]^encoder_o_reg[0]);
-		  $display("error_counter,err_inj = %h %b %d %d",
-		         error_counter,err_inj,bad_bit_ct,word_ct);
+		 $display("input, output = %b %b %d %d",
+		         encoder_o_reg0,encoder_o_reg,bad_bit_ct,word_ct);
         end
       end   
 

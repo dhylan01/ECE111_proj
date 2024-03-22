@@ -39,17 +39,17 @@ module viterbi_tx_rx #(parameter N=3) (
          enable_encoder_i_reg <= enable_encoder_i;  
          enable_decoder_in    <= valid_encoder_o; 
 //         encoder_o_reg        <= 'b0;
-         //if(word_ct[0]) error_counter        <= $random;
+         error_counter        <= $random;
          word_ct              <= word_ct + 1;			
 // bit error injection in encoder_o_reg        					           					           
          encoder_i_reg     <= encoder_i;
          encoder_o_reg0    <= encoder_o;
 //	     error_counterQ    <= error_counter;
-         if(word_ct > 0 && (word_ct % 14 == 0 || inv_flag)) begin //
+         if(error_counter[3:0] == '1 || inv_flag) begin //
 		   //  err_inj        <= error_counter[29:28];
            			
 
-            encoder_o_reg  <= {encoder_o[1], ~encoder_o[0]};	 // inject bad bits 
+            encoder_o_reg  <= {~encoder_o[1], encoder_o[0]};	 // inject bad bits 
             inv_flag <= ~inv_flag;
          end
          else begin       		   // clean version

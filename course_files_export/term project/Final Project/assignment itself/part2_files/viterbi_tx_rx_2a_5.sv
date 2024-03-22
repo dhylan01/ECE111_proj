@@ -49,7 +49,7 @@ module viterbi_tx_rx #(parameter N=3) (
 		   //  err_inj        <= error_counter[29:28];
            			
 
-            encoder_o_reg  <= {encoder_o[1], ~encoder_o[0]};	 // inject bad bits 
+            encoder_o_reg  <= {~encoder_o[1], encoder_o[0]};	 // inject bad bits 
             inv_flag <= ~inv_flag;
          end
          else begin       		   // clean version

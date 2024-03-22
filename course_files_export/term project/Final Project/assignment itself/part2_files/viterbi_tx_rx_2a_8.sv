@@ -45,11 +45,11 @@ module viterbi_tx_rx #(parameter N=3) (
          encoder_i_reg     <= encoder_i;
          encoder_o_reg0    <= encoder_o;
 //	     error_counterQ    <= error_counter;
-         if(word_ct > 0 && (word_ct % 14 == 0 || inv_flag)) begin //
+         if(word_ct > 0 && (word_ct % 29 == 0 || inv_flag)) begin //
 		   //  err_inj        <= error_counter[29:28];
            			
 
-            encoder_o_reg  <= {encoder_o[1], ~encoder_o[0]};	 // inject bad bits 
+            encoder_o_reg  <= {~encoder_o[1], ~encoder_o[0]};	 // inject bad bits 
             inv_flag <= ~inv_flag;
          end
          else begin       		   // clean version
